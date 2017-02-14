@@ -1,0 +1,44 @@
+.personajeContainer{
+
+}
+
+.tablePersonajes{
+	text-align: center;
+}
+
+.tablePersonajes, .tituloTable, .tablaItem{
+	border: 1px solid black;
+}
+
+
+.tablePersonajes{
+	table-layout: fixed;
+	 border-collapse: separate;
+	width: 70%;
+	height: 100px;
+	margin-left: 15%;
+	margin-right: 20%;
+	margin-top: 10px
+
+}
+.tablaItem{
+	width: 180px;
+	height: 450px;
+	margin-top: 1%;
+	margin-bottom:1%; 
+
+}
+
+.tituloTable{
+	font-size: 22px;
+	color: black;
+}
+.imagenItem{
+	width: 100%;
+	height: 100%;
+
+
+}
+.personajeDesc{
+
+}
