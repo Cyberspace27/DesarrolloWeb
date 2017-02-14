@@ -1,0 +1,67 @@
+body{
+	background-color: #E4ECF0;
+}
+
+.tituloContainer{
+	background-image:url("..//imgs/backgroundTitulo.jpg");
+	background-repeat: repeat-x;
+    background-position: 30px;
+	position: fixed ;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	height: 40%;
+}
+.linksContainer{
+
+	margin-top: 20px;
+	text-align: center;
+	padding-bottom: 20;
+
+
+}
+
+.parrafoContainer{
+	margin-top:180px;
+	margin-left:50px; 
+
+}
+
+.palabraContainer{
+	margin-top: 80px;
+
+}
+
+.origen{
+	color: green;
+	margin-left: 
+
+}
+
+.definiciones{
+
+}
+
+.link{
+	margin-right: 25px;
+	text-decoration: none;
+}
+
+.azul{
+	color: blue;
+
+}
+
+.celeste{
+	color: #919fb7;
+}
+.imagContainer{
+	float: right;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+.imagen{
+	width: 80px;
+	height: 80px;
+	float: right:40%;
+}

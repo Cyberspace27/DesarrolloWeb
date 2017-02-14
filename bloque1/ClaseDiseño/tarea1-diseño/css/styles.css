@@ -1,0 +1,94 @@
+body{
+	background-color: #E4ECF0;
+}
+
+.tituloContainer{
+	background-image:url("..//imgs/backgroundTitulo.jpg");
+	background-repeat: repeat-x;
+    background-position: 30px;
+	position: fixed ;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	height: 40%;
+}
+.linksContainer{
+
+	margin-top: 20px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.titulo{
+	margin-top: 10%;
+	color: blue;
+	font-size: 25px;	
+	height: 10px;
+}
+.tituloTextContainer{
+	background-color: white;
+	margin-right: 30%;
+	margin-left: 30%;
+
+}
+.tituloParrafo{
+	color: green;
+	font-size: 18px;
+	text-decoration: underline;
+
+
+}
+
+
+.maincontainer{
+	margin-top: 22%;
+	text-align: center;
+
+}
+
+
+.tableItemSkate, .tituloTable, .tablaItem{
+	border: 1px solid black;
+}
+
+.tableItemSkate{
+	table-layout: fixed;
+	 border-collapse: separate;
+	width: 70%;
+	height: 100px;
+	margin-left: 15%;
+	margin-top: 10px
+
+}
+.tablaItem{
+	width: 180px;
+	height: 180px;
+	margin-top: 1%;
+	margin-bottom:1%; 
+
+}
+
+.tituloTable{
+	font-size: 22px;
+	color: black;
+}
+.imagenItem{
+	width: 100%;
+	height: 100%;
+
+
+}
+
+.footerContainer{
+	margin-top: 2%;
+	text-align: center;
+
+}
+.linkFooter{
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.logo{
+	width: 50px;
+	height: 50px;
+}
