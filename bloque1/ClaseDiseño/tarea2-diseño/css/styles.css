@@ -34,7 +34,7 @@ body{
 .menuContainer{
 	position: fixed;
 	top: 26%;
-	margin-left: 40%;
+	margin-left: 35%;
 	margin-right: 30%;
 }		
 #menuPaginas {
@@ -84,21 +84,23 @@ display:block;
 
 .mainContainer{
 	margin-top: 20%;
-	margin-left: 22%;
-	margin-right: 20%;
 
 }
 
 .imageMainContainer{
-    width: 80;
-    margin-left: 16%;
+    
+    margin-left: 23%;
 }
 
 .tituloDescription{
 	text-align: center;
+	color: red;
 }
 
-
+.parrafoMainDescription{
+	margin-left: 8%;
+	margin-right: 6%;
+}
 
 
 .footerContainer{
@@ -109,6 +111,7 @@ display:block;
 .linkFooter{
 	text-decoration: none;
 	margin-right: 10px;
+	color: green;
 }
 
 .logo{

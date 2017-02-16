@@ -31,7 +31,7 @@
 
 .tituloTable{
 	font-size: 22px;
-	color: black;
+	color: blue;
 }
 .imagenItem{
 	width: 100%;
@@ -40,5 +40,6 @@
 
 }
 .personajeDesc{
-
+	margin-left: 3%;
+	margin-right:  3%;
 }

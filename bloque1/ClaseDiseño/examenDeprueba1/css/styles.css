@@ -1,16 +1,9 @@
-body{
-	background-color: #E4ECF0;
-}
-
 .tituloContainer{
-	background-image:url("..//imgs/backgroundTitulo.jpg");
-	background-repeat: repeat-x;
-    background-position: 30px;
-	position: fixed ;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	text-align: center;
-	height: 40%;
+	background-color: #9ab5e0;
 }
 .linksContainer{
 

@@ -4,6 +4,7 @@
 
 .tituloDescriptionGaleria{
 	text-align: center;
+	color: red;
 }
 
 .tableGaleria, .tituloTable, .tablaItem{
@@ -30,7 +31,7 @@
 
 .tituloTable{
 	font-size: 22px;
-	color: black;
+	color: blue;
 }
 .imagenItem{
 	width: 100%;
