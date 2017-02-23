@@ -8,10 +8,9 @@ import java.util.*;
  * @author Cyberspace
  */
 public class Curso {
-    ArrayList alumnos;
-    String nombre;
-    String profesor;
-    String universidad;
+    private ArrayList alumnos = new ArrayList();
+    private String nombre, profesor, universidad;
+    
 
     public Curso() {
     }
@@ -47,6 +46,29 @@ public class Curso {
     public void setUniversidad(String universidad) {
         this.universidad = universidad;
     }
+
+    @Override
+    public String toString() {
+        
+        String listaDeAlumnos = "";
+        for (int i = 0; i < alumnos.size(); i++) {
+            
+            listaDeAlumnos += ((Alumno)alumnos.get(i)).toString() +",";
+            
+        }
+        return "Curso: " + nombre +
+                "\n Profesor: " + profesor +
+                "\nUniversidad: " + universidad +
+                "\nLista de Alumnos : " + listaDeAlumnos   ;
+    }
+    
+    
+    public void registrar(Alumno alumno){
+        alumnos.add(alumno);
+        
+    }
+    
+    
     
     
 }

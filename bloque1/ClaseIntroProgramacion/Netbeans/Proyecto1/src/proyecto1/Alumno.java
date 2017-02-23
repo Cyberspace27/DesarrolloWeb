@@ -6,9 +6,10 @@ package proyecto1;
  * @author Cyberspace
  */
 public class Alumno {
-   String nombre ;
-   String apellido ;
-   String carnet ;
+   private String nombre;
+   private String apellido;
+   private String carnet ;
+  
 
     public Alumno() {
     }
@@ -35,6 +36,14 @@ public class Alumno {
 
     public void setCarnet(String carnet) {
         this.carnet = carnet;
+    }
+
+    @Override
+    public String toString() {
+        return "\nNombre " + nombre +
+                "\nApellido " +apellido+ 
+                "\nCarnet " +carnet 
+                ;
     }
    
    
