@@ -8,19 +8,19 @@ import java.util.*;
  * @author Cyberspace
  */
 public class Curso {
-    private ArrayList<Alumno> alumnos = new ArrayList();
+    private ArrayList<Alumno> listaAlumnos = new ArrayList();
     private String nombre, profesor, universidad;
-    
+    int cantidadAlumno;
 
     public Curso() {
     }
 
     public ArrayList getAlumnos() {
-        return alumnos;
+        return listaAlumnos;
     }
 
     public void setAlumnos(ArrayList alumnos) {
-        this.alumnos = alumnos;
+        this.listaAlumnos = alumnos;
     }
 
     public String getNombre() {
@@ -51,9 +51,9 @@ public class Curso {
     public String toString() {
         
         String listaDeAlumnos = "";
-        for (int i = 0; i < alumnos.size(); i++) {
+        for (int i = 0; i < listaAlumnos.size(); i++) {
             
-            listaDeAlumnos += ((Alumno)alumnos.get(i)).toString() +",";
+            listaDeAlumnos += ((Alumno)listaAlumnos.get(i)).toString() +",";
             
         }
         return "Curso: " + nombre +
@@ -64,7 +64,7 @@ public class Curso {
     
     
     public void registrar(Alumno alumno){
-        alumnos.add(alumno);
+        listaAlumnos.add(alumno);
         
     }
     

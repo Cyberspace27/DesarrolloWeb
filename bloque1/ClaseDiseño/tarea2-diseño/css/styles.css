@@ -122,7 +122,7 @@ display:block;
 .linkFooter{
 	text-decoration: none;
 	margin-right: 10px;
-	color: green;
+	color: black;
 }
 
 .logo{
@@ -130,15 +130,15 @@ display:block;
 	height: 50px;
 }
 
-/*
+
 .footer{
-	position: absolute;
+/*	position: absolute;*/
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding: 10px;
+	padding: 2px;
 	background-color: #efefef;
 	text-align: center;
 	font-size: 1em;
 }
-*/
+
