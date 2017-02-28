@@ -8,7 +8,7 @@ import java.util.*;
  * @author Cyberspace
  */
 public class Curso {
-    private ArrayList alumnos = new ArrayList();
+    private ArrayList<Alumno> alumnos = new ArrayList();
     private String nombre, profesor, universidad;
     
 
