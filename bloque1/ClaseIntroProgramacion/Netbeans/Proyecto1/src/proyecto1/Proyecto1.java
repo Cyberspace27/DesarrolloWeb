@@ -5,7 +5,7 @@ import java.util.*;
 
 /**
  *
- * @author Cyberspace
+ * @author Ariel Villarreal calderon
  */
 public class Proyecto1 {
 

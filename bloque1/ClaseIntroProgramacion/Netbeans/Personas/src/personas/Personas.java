@@ -11,6 +11,7 @@ import java.util.Scanner;
 import java.util.*;
 public class Personas {
 
+    
     public static void main(String[] args) {
        Scanner teclado = new Scanner(System.in);
         System.out.println("Programa de personas");
