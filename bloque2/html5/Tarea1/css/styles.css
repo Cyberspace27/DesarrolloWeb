@@ -37,16 +37,15 @@ body{
 }
 .tituloParrafo{
 	color: green;
-	font-size: 18px;
+	font-size: 15px;
 	text-decoration: underline;
 }
 
 
 .menuContainer{
 	position: fixed;
-	top: 26%;
-	margin-left: 35%;
-	margin-right: 30%;
+	top: 16%;
+	margin-left: 38%;
 }		
 #menuPaginas {
 	margin:auto;
@@ -94,18 +93,33 @@ display:block;
 }
 
 .mainContainer{
-	margin-top: 20%;
+	margin-top: 12%;
+	margin-right: 20%;
+	margin-left: 35%;
 
 }
 
 .imageMainContainer{
     
-    margin-left: 23%;
+    margin-left: 20%;
 }
 
 .tituloDescription{
+	margin-left: 15%;
+	color: white;
+}
+/*Nuevo clase*/
+.imagenCancion{
 	text-align: center;
-	color: red;
+}
+/*Nuevo clase*/
+.secAudioContainer{
+
+ 
+}
+/*Nuevo rule*/
+.audioItem h3{
+	margin-left: 20%;
 }
 
 .parrafoMainDescription{
@@ -115,7 +129,8 @@ display:block;
 
 
 .footerContainer{
-	margin-top: 20px;
+	height: 18px;
+	margin-top: 18px;
 	text-align: center;
 
 }
@@ -126,8 +141,8 @@ display:block;
 }
 
 .logo{
-	width: 50px;
-	height: 50px;
+	width: 20px;
+	height: 20px;
 }
 
 
