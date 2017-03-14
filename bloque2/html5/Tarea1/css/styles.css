@@ -1,27 +1,29 @@
 body{
-	background-color: #E4ECF0;
+	/*background-color: #E4ECF0;*/
 }
 .backContainer{
-	background-color: black;
+	/*background-color: black;*/
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("..//imgs/background.jpg");
+	background-image: url("..//imgs/ImgBackground.jpeg");
+	background-repeat: repeat-x;
 	z-index: -1;
 	/*background-repeat:no-repeat;*/
-	opacity: 0.6;
+	/*opacity: 0.6;*/
 }
 .tituloContainer{
-	background-image:url("..//imgs/backgroundTitulo.jpg");
+	background-color: gray;
+	background-image:url("..//imgs/ImgBackground.jpeg");
 	background-repeat: repeat-x;
     background-position: 40px;
 	position: fixed ;
 	top: 0%;
 	width: 100%;
 	text-align: center;
-	height: 30%;
+	height: 23%;
 }
 .titulo{
 	margin-top: 10%;
