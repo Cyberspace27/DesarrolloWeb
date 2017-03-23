@@ -1,3 +1,4 @@
+/*Section css del fondo de toda la pagina*/
 .backContainer{
 	background-color: gray;
 	position: fixed;
@@ -5,31 +6,38 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("..//imgs/ImgBackground.jpeg");
+	background-image:url("..//imgs/background.jpg");
 	background-repeat: repeat-x;
-	z-index: -1;
+    background-position: 30px;
+    z-index: -1;
+	opacity: 0.6;
 	/*background-repeat:no-repeat;*/
 	/*opacity: 0.6;*/
 }
 
-.tituloContainer{
-	background-color: gray;
-	/*background-image:url("..//imgs/ImgBackground.jpeg");*/
-	background-repeat: repeat-x;
-    background-position: 40px;
-	position: fixed ;
-	top: 0%;
-	width: 100%;
-	text-align: center;
-	height: 23%;
+.backBodyContainer{
+	position: fixed;
+	background-color: white;
+	margin-right: 28%;
+	width: 70%;
+	height: 70%;
+	 background-position: 30px;
+    z-index: -1;
+	opacity: 0.6;
 }
 
-.titulo{
-	margin-top: 10%;
-	color: blue;
-	font-size: 25px;	
-	height: 10px;
+/*Section css del header*/
+.tituloContainter{
+	background-color: gray;
+	background-position: 30px;
+	position: fixed ;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	height: 27%;
 }
+
+
 .tituloTextContainer{
 	background-color: white;
 	margin-right: 30%;
@@ -63,9 +71,7 @@
 
 
 .menuContainer{
-	top: 16%;
 	float: right;
-	
 }		
 #menuPaginas {
 	margin:auto;
@@ -113,23 +119,36 @@ display:block;
 	right:-140px;
 	top:0px;
 }
+/*Section css del main container*/
+.subtitulo{
+color: gray;
+text-align: center;
+}
 
 .mainContainer{
-	margin-top: 12%;
-	margin-right: 20%;
-	margin-left: 35%;
+	margin-top: 12%;	
 
 }
+
 
 .bodyContainer{
-
+	
+	background-color: white;
+	text-align: center;
+	width: 60%;
+	height: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 20%;
 }
 
-
+/*Section css del footer*/
 .footerContainer{
 	height: 18px;
 	margin-top: 18px;
 	text-align: center;
+	margin-bottom: 0%;
+	bottom: 0%;
 
 }
 .linkFooter{
@@ -147,7 +166,7 @@ display:block;
 .footer{
 /*	position: absolute;*/
 	right: 0;
-	bottom: 0;
+	margin-bottom: 0;
 	left: 0;
 	padding: 2px;
 	background-color: #efefef;
