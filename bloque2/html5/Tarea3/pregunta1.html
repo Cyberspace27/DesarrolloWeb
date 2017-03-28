@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Juego de preguntas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/pregunta1.js"></script>
+</head>
+<body>
+
+	<h1 id="titulo">Adivina adivinador! </h1>
+
+    <div class="formContainer">
+        <p>Cual es el mejor Amigo del Hombre</p>
+        <form id="form1">
+
+            <label class="respuesta">Respuesta: </label>
+            <div class="radioContainer">
+                <label>
+                  <input type="radio" name="animal" class="radio" value="gato" >
+                  Gato                  
+                </label>
+
+                <label>
+                    <input type="radio" name="animal" class="radio" value="perro" >
+                    Perro                    
+                </label>
+
+                <label>                   
+                     <input type="radio" name="animal" value="Perico" class="radio" id="3">
+                      Perico
+                 </label>
+
+                <label>                   
+                     <input type="radio" name="animal" value="cafe" class="radio" id="4">
+                      El Delfin
+                 </label>
+            </div>
+
+            
+        </form>
+        <button type="button" id="button" onclick="respuesta(0)">Responder</button>
+        <div class="respuestaContainer">
+        	<p id="resultado"></p>
+          <a href="pregunta2.html" id="nextPregunta"></a> 
+        </div>
+          
+    </div>
+
+  	<div class="sidelbarContainer">
+  		<div class="pistaContainer">
+  			Aqui va el video oh el audio
+  		</div>
+  	</div>
+
+
+
+</body>
+
+</html>

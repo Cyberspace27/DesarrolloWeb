@@ -1,0 +1,72 @@
+.logo{
+	width: 42px;
+	height: 42px;
+}
+
+#titulo{
+	text-align: center;
+	color: red;
+}
+
+.formContainer{
+	margin-left: 200px;
+	
+}
+
+#productoContainer{
+	margin-left: 200px;
+	
+}
+
+#button {
+	
+	color: white;
+	background-color: blue;
+	margin-top: 25px;	
+}
+
+#button:hover{
+	color: black;
+	background-color: white;
+}
+
+#titulo{
+	padding-bottom: 50px;
+}
+.radioContainer label{
+	display: block;	
+}
+
+.respuesta {
+	display: block;
+	padding-bottom: 25px;
+}
+.correcto {
+	color: lightgreen;
+}
+.incorrecto {
+	color: red;
+}
+#resultado{
+	font-size: 2em;
+}
+
+.monitorContainer {
+	float: right;
+	margin-right: 150px;
+}
+
+.monitorSolo {
+	margin-left: 25%;
+	margin-right: 25%
+	
+}
+
+.producto {
+	padding-bottom: 30px;
+}
+
+.pistaContainer{
+	float: right;
+	margin-right: 28%;
+}

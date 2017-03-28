@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Juego de preguntas, pregunta#4</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/pregunta4.js"></script>
+</head>
+<body>
+
+	<h1 id="titulo">Adivina adivinador! </h1>
+
+    <div class="formContainer">
+        <p>Quien es el cantante en ese audio</p>
+        <form id="form1">
+
+            <label class="respuesta">Respuesta: </label>
+            <div class="radioContainer">
+                <label>
+                  <input type="radio" name="cantante" class="radio" value="jeanPaul" >
+                  Jean Paul                  
+                </label>
+
+                <label>
+                    <input type="radio" name="cantante" class="radio" value="rucky" >
+                    Rucky                    
+                </label>
+
+                <label>                   
+                     <input type="radio" name="cantante" value="tapon" class="radio" id="3">
+                      Tapon
+                 </label>
+
+                <label>                   
+                     <input type="radio" name="cantante" value="aventura" class="radio" id="4">
+                      Aventura
+                 </label>
+            </div>
+
+            
+        </form>
+        <button type="button" id="button" onclick="respuesta(0)">Responder</button>
+        <div class="respuestaContainer">
+        	<p id="resultado"></p>
+          <a href="pregunta5.html" id="nextPregunta"></a> 
+        </div>
+          
+    </div>
+
+  	<div class="sidelbarContainer">
+  		<div class="pistaContainer">
+  			Aqui va el video oh el audio
+  		</div>
+  	</div>
+
+
+
+</body>
