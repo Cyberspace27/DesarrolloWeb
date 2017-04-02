@@ -1,0 +1,81 @@
+select count(*) from country 
+where name like "a%" and Population > 50000;
+
+
+///////////////////////////////////////////// el pais con menos tamaño y ciertos campos para tener mayor vision
+
+sselect name, Population, SurfaceArea from country order by SurfaceArea asc limit 1;
+
+////////////////////////////////////////////////////////////////
+select name, HeadOfState from country where name="Costa Rica";
+
+////////////////////////////
+///////////////////Cuantos paises ahi en centro america
+
+select count(*) from country where Region="Central America";
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+Cual es el producto nacional bruto del pais centro americano con mas pobacion
+select name,GNP from country where Region="Central America" order by Population desc limit 1 ;
+
+/////////////////////////////////////////////////////////
+
+Cual fue el ultimo pais de america en independisarse
+select name,IndepYear from country where Continent="North America" or Continent="South America" order by IndepYear desc limit 1 ;
+
+
+/////////////////////////////
+cuales son las regiones de europaC
+select distinct Region from country where Continent="Europe";
+
+
+///////////////////////////////////////////////////////////////
+
+de los paises codigo inicia com c tiene la mayor espectativa de vida
+select LifeExpectancy, Name from  country where Code like "c%" order by LifeExpectancy desc limit 1;
+
+/////////////////////////////////////
+
+
+cual es el pais mas peque de asia con la mayor espectativa de vida
+
+select Name,SurfaceArea from  country where Continent="Asia" order by SurfaceArea asc, LifeExpectancy limit 1;
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+Cual es el nombre y la foma de gobierno del pais cuya capital es la numero 62
+
+select Name,GovernmentForm from  country where Capital=62;
+
+
+entre europa y asi cual es el pais mas pequeño
+
+select Name,LifeExpectancy from  country where Continent like "%America%" order by LifeExpectancy desc limit 1 ;
+
+
+
+query para el porcentaje usando la columna el GNP
+select avg(GNP) from country
+
+
+el promedio de espectativa de vida entre los 5 paises mas grades de asia, africa y europa
+
+select avg(LifeExpectancy) from  country where Continent="Asia" or Continent="Africa" or Continent="Europe" order by SurfaceArea desc, LifeExpectancy limit 5 ;
+
+
+
+cuantos nombre diferentes tiene la tabla ciudad
+select count(distinct name) from city;
+
+
+Cual es la ciuda mas grande 
+select name,Population from city order by Population desc limit 1;
+
+cuantas ciudades tiene el pais cuyo codigo es NLD
+select count(*) from city where CountryCode="NLD";
+
