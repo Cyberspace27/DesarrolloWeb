@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Juego de preguntas, pregunta#3</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/pregunta3.js"></script>
+</head>
+<body>
+
+	<h1 id="titulo">Adivina adivinador! </h1>
+
+    <div class="formContainer">
+        <p>Como se le dice cuando alguien le ve la cara de tonto a una persona, normalmente da risa ?</p>
+        <form id="form1">
+
+            <label class="respuesta">Respuesta: </label>
+            <div class="radioContainer">
+                <label>
+                  <input type="radio" name="broma" class="radio" value="alagar" >
+                  Alagar                  
+                </label>
+
+                <label>
+                    <input type="radio" name="broma" class="radio" value="consejo" >
+                         Consejos               
+                </label>
+
+                <label>                   
+                     <input type="radio" name="broma" value="broma" class="radio" id="3">
+                      Broma
+                 </label>
+
+                <label>                   
+                     <input type="radio" name="broma" value="insulto" class="radio" id="4">
+                      Insulto
+                 </label>
+            </div>
+
+            
+        </form>
+        <button type="button" id="button" onclick="respuesta(0)">Responder</button>
+        <div class="respuestaContainer">
+        	<p id="resultado"></p>
+          <a href="pregunta4.html" id="nextPregunta"></a>
+          <a href="pregunta3.html" id="newTry" class="newTry"></a> 
+        </div>
+          
+    </div>
+
+  	<div class="sidelbarContainer">
+  		<div class="pistaContainer">
+  			 <div class="videoContainer">
+        <video  controls>
+          <source src="multimedias/pregunta3_Broma.mp4" type="video/mp4">
+            Tu navegador no implementa el elemento <code>video</code>.
+        </video>  
+      </div>
+  		</div>
+  	</div>
+
+
+
+</body>
+
+</html>

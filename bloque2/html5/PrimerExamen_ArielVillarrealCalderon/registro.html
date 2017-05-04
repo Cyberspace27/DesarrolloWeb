@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Tarea 2, Formulario</title>
+	<title>Examen 1 html5, Registro</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -14,19 +14,18 @@
 			<div class="tituloContainter">
 				<div class="backHeaderBackground"></div>
 				<div class="tituloTextContainer">
-					<h1 class="titulo">Naruto fans page</h1>
+					<h1 class="titulo">Selección de fútbol de Costa Rica</h1>
 					<p class="tituloParrafo">
-						The best of Naruro shipputen..!!
+						The best of Costa Rica Team..!!
 					</p>
 				</div>
-
 
 				<div class="menuContainer">
 					<div id="menuPaginas">
 						 <ul class="nav">
 							<li><a href="index.html">Principal</a></li>
-							<li><a href="registrar.html">Registrar</a></li>
-							<li><a href="login.html">Login</a></li>		
+							<li><a href="jugadores.html">Jugadores</a></li>
+							<li><a href="registro.html">Registrar</a></li>		
 						</ul>
 					</div>
 					<!--fin del menu de menu de paginas-->
@@ -48,25 +47,28 @@
 						<fieldset>
 							<legend><h2 class="subtitulo">Registrarse</h2></legend>
 							<label>Nombre</label>
-							<input type="text" pattern="[A-Za-z\s]">
+							<input type="text" pattern="[A-Za-z\s]" required>
 							<br><br>
-							<label>Crear Contraseña</label>
-							<input type="password" required>
-							<br><br>
-							<label>Confirmar Contraseña</label>
-							<input type="password" required>
+							<label>Apellido</label>
+							<input type="text" pattern="[A-Za-z\s]" required>
 							<br><br>
 							<label>Edad</label>
-							<input type="number" min="18" max="140">
+							<input type="number" min="13" max="100">
 							<br><br>
 							<label>Fecha de nacimiento</label>
-							<input type="date" required >
-							<br><br>
-							<label>Color </label>
-							<input type="color" >
+							<input type="date" >
 							<br><br>
 							<label>Email </label>
-							<input type="email">
+							<input type="email" required>
+							<br><br>
+							<label>Jugador Favorito</label>
+							<select>
+  							<option value="empty">>></option>
+  							<option value="brain">Brain</option>
+  							<option value="Joel">Joel</option>
+  							<option value="Celso">Celso</option>
+  							<option value="Celso">Yeltsin </option>
+						</select>
 							<br><br>
 							<input type="submit" >
 							<br><br>
@@ -80,7 +82,7 @@
 		<footer class="footer">
 			<label>
 					<div class="footerContainer">
-						<a class="linkFooter" href="#">© 2017-2017 exam#2.com</a>
+						<a class="linkFooter" href="#">© 2017-2017 sele.com</a>
 						<a class="linkFooter" href="http://www.youtube.com"><img class="logo" src="imgs/footer/youtube.png"></a>
 						<a class="linkFooter" href="http://www.wikipedia.org"><img class="logo" src="imgs/footer/wiki-logo.png"></a>
 						<a class="linkFooter"href="http://www.reddit.com"><img class="logo" src="imgs/footer/reddit.png"></a>

@@ -1,0 +1,12 @@
+respuesta #1
+
+select c.Code, ci.Name as CityName, c.Name, ci.Population , ci.District
+from country as c, city as ci
+Where c.Code = ci.CountryCode
+and c.Code like "A%"  order by ci.Population desc limit 1;
+
+respuesta #2
+
+
+
+

@@ -1,0 +1,192 @@
+select count(*) 
+from country as c, city as ci
+Where c.Code = ci.CountryCode
+and c.Name = ""
+
+incopleta
+
+
+¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+
+
+la ciudad menos pobablada de europa
+
+select ci.Name as NombreCuidad, ci.Population as Poblacion
+from country as c, city as ci
+Where c.Code = ci.CountryCode
+and c.Continent = "Europe"
+order by ci.Population desc
+limit 1;
+
+¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+
+
+La ciudad menos poblada del caribean
+
+
+Select ci.Name as NombreCuidad, ci.Population as Poblacion
+from country as c, city as ci
+Where c.Code = ci.CountryCode
+and c.Continent = "Europe"
+order by ci.Population desc
+limit 1;
+
+
+
+
+La ciudad con mas poblacion del pais menos poblado de asia
+
+select ci.Name as CityName, c.Name, c.Population , ci.Population as cuidad
+from country as c, city as ci
+Where c.Code = ci.CountryCode
+and c.Continent = "Asia"
+order by c.Population asc, ci.Population desc;
+
+
+
+selecionar los cursos de administracion en la base de datos de universidad
+select cu.nombre as NombreCurso, ca.nombre
+from curso as cu, carrera as ca
+where cu.Carrera_idCarrera = ca.idCarrera
+and  ca.nombre = "Administracion";
+
+
+nose todavia
+
+
+select cu.nombre as NombreCurso, ca.nombre, g.nombre as NombreAcademico
+from curso as cu, carrera as ca, grado_academico as g 
+
+where cu.Carrera_idCarrera = ca.idCarrera
+and 
+ca.Grado_Academico_idNivel = g.idNivel 
+and
+
+ca.nombre = "Administracion";
+
+
+
+
+cursos del de diseño web y es tecnico
+
+select cu.nombre as NombreCurso, ca.nombre, g.nombre as NombreAcademico
+from curso as cu, carrera as ca, grado_academico as g
+
+where cu.Carrera_idCarrera = ca.idCarrera
+and 
+ca.Grado_Academico_idNivel = g.idNivel 
+and
+
+ca.nombre = "Diseño Web" and 
+g.nombre = "Tecnico";
+
+Cursos de javascript
+
+select cu.nombre as NombreCurso, ca.nombre, g.nombre as NombreAcademico
+from curso as cu, carrera as ca, grado_academico as g
+
+where cu.Carrera_idCarrera = ca.idCarrera
+and 
+ca.Grado_Academico_idNivel = g.idNivel 
+
+and
+
+ca.nombre = "Diseño Web" 
+and
+
+g.nombre = "Tecnico" and 
+cu.nombre = "Javascript";
+
+
+
+
+curso de diseño , tecnico y todos los cursos de javascript
+
+select cu.nombre as NombreCurso, c.nombre as NombreClase
+from curso as cu, carrera as ca, grado_academico as g, clase as c
+where cu.Carrera_idCarrera = ca.idCarrera
+and 
+ca.Grado_Academico_idNivel = g.idNivel 
+and
+c.Curso_idCurso = cu.idCurso
+and
+ca.nombre = "Diseño Web" and
+g.nombre = "Tecnico" and 
+cu.nombre = "Javascript";
+
+
+cuales la informacion de las clases del tecnico de desarrollo web del curso de javascript
+
+select cu.nombre as NombreCurso, c.nombre as NombreClase, p.nombre, h.periodo, h.dia
+
+from curso as cu, carrera as ca, grado_academico as g, clase as c, profesor as p, horario as h
+where cu.Carrera_idCarrera = ca.idCarrera
+and 
+ca.Grado_Academico_idNivel = g.idNivel 
+and
+c.Curso_idCurso = cu.idCurso
+and
+p.carnet = c.Profesor_carnet
+and
+c.Horario_idHorario = h.idHorario
+and
+ca.nombre = "Diseño Web" and
+g.nombre = "Tecnico" and 
+cu.nombre = "Javascript";
+
+
+
+select cu.nombre as NombreCurso, c.nombre as NombreClase, p.nombre, h.periodo, h.dia
+
+from curso as cu, carrera as ca, grado_academico as g, clase as c, profesor as p, horario as h
+where cu.Carrera_idCarrera = ca.idCarrera
+and 
+ca.Grado_Academico_idNivel = g.idNivel 
+and
+c.Curso_idCurso = cu.idCurso
+and
+p.carnet = c.Profesor_carnet
+and
+c.Horario_idHorario = h.idHorario
+and
+ca.nombre = "Diseño Web" and
+g.nombre = "Tecnico" and 
+cu.nombre = "Javascript";
+
+
+
+
+
+
+Update 
+
+
+update propietarios set nombre = "Juan", cedula="1-333-434", edad = "42"
+where idPropietarios= 4;
+
+
+Insert
+
+insert into propiedad(nombre, Address,  Precio, Dimension, Propietario, Distrito_idDistrito, Distrito_Canton_idCanton, Distrito_Canton_Ciudad_idCiudad, Distrito_Canton_Ciudad_Pais_idPais)
+
+values ("Wayne Farm", "Tamarindo" , 3000000 , 1000, "Wayne Kerr", 1, 1 , 5, 1);
+
+
+select final
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

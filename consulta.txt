@@ -1,0 +1,14 @@
+cambie el nombre de la columna Ventascol  a Fecha_venta 
+ALTER TABLE ventas CHANGE COLUMN Ventascol Fecha_venta varchar(22); 
+
+
+Como cambiar el valor varchar a int de la comlumna monto de la tabla ventas
+ALTER TABLE ventas modify monto int(12); 
+
+
+insert de la tabla mas grande ventas
+
+insert into ventas(monto, Fecha_venta,  Vendedor_idVendedor, Comprador_idCustomers, Propiedad_idPropiedad, Propiedad_Distrito_idDistrito, Propiedad_idPropiedad, Distrito_Canton_Ciudad_idCiudad, Distrito_Canton_Ciudad_Pais_idPais)
+
+values ("Wayne Farm", "Tamarindo" , 3000000 , 1000, "Wayne Kerr", 1, 1 , 5, 1);
+

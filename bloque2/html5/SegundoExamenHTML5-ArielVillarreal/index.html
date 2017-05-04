@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>Examen #2, HTML5</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="backContainer"></div>
+  
+    <div class="mainContainer">
+        <div class="headerContainer">
+            <h1 class="header">Examen # 2, HTML5</h1>
+        </div>
+        <!--Section de los botones-->
+        <div class="buttonContainer" >
+            <h3 class="sectionHeader">Secion de botones</h3>
+            <a id="btn1" class="btn btn-default" href="#" role="button">Link</a>
+            <button id="btn2" class="btn btn-default" type="submit">Button</button>
+            <input id="btn3" class="btn btn-default" type="button" value="Input">
+            <input  id="btn4" class="btn btn-default" type="submit" value="Submit">
+        </div><!--Fin seccion botones-->
+
+
+        <!--Section de la Tabla-->
+
+        <div class="tableContainer">
+          <h3 class="sectionHeader">Secion de la tabla</h3>
+            <table class="table table-hover"> 
+              <thead> 
+                  <tr> 
+                    <th>#</th> 
+                    <th>Nombre</th>
+                     <th>Genero</th> 
+                     <th>Img</th>
+                  </tr> 
+                </thead> 
+                <tbody> 
+                  <tr> 
+                    <th scope="row">1</th>
+                    <td>Sean Paul</td> 
+                    <td>Maculino</td>
+                    <td><div class="iconoImage" style="background-image:url('imgs/seanPaul.jpg');"></div></td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">2</th>
+                    <td>Naruto Shipp</td>
+                    <td>Masculino</td> 
+                    <td><div class="iconoImage" style="background-image:url('imgs/Naruto.jpg');"></div></td> 
+                  </tr>
+                  <tr> 
+                    <th scope="row">3</th>
+                    <td>Batman</td>
+                    <td>Bruno Dias</td>
+                    <td><div class="iconoImage" style="background-image:url('imgs/batman.jpg');"></div></td>
+                  </tr>
+                </tbody> 
+              </table> 
+        </div><!--Fin seccion tablaContainer-->
+        <div class="formContainer">
+            <h3 class="sectionHeader">Secion del Formulario</h3>
+            <div class="actionForm">
+              <input  id="MostrarForm" onclick="mostrarFormulario();" class="btn btn-default"  value="Mostrar Form">
+              <input  id="OcutlarForm" onclick="ocultarFormulario();" class="btn btn-default"  value="Ocultar Form">
+          </div>
+          <form id="mainForm" style="display:none;">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button id="btnForm" type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div><!--Fin seccion formContainer-->
+        <!--Footer section-->
+          <footer class="footer">
+      <label>
+          <div class="footerContainer">
+            <a class="linkFooter" href="#">© 2017-2017 exam#2.com</a>
+            <a class="linkFooter" href="http://www.youtube.com"><img class="logo" src="imgs/footer/youtube.png"></a>
+            <a class="linkFooter" href="http://www.wikipedia.org"><img class="logo" src="imgs/footer/wiki-logo.png"></a>
+            <a class="linkFooter"href="http://www.reddit.com"><img class="logo" src="imgs/footer/reddit.png"></a>
+          </div><!--Fin del div footerContainer-->
+        </label>
+    </footer><!--Fin del mainContainer-->
+
+
+    </div>
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

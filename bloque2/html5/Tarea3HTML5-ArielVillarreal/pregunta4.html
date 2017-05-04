@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Juego de preguntas, pregunta#4</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/pregunta4.js"></script>
+</head>
+<body>
+
+	<h1 id="titulo">Adivina adivinador! </h1>
+
+    <div class="formContainer">
+        <p>Que es ese sonido</p>
+        <form id="form1">
+
+            <label class="respuesta">Respuesta: </label>
+            <div class="radioContainer">
+                <label>
+                  <input type="radio" name="sonido" class="radio" value="Viento" >
+                  Viento                  
+                </label>
+
+                <label>
+                    <input type="radio" name="sonido" class="radio" value="lluvia" >
+                    Lluvia                    
+                </label>
+
+                <label>                   
+                     <input type="radio" name="sonido" value="trueno" class="radio" id="3">
+                      Trueno
+                 </label>
+
+                <label>                   
+                     <input type="radio" name="cantante" value="mar" class="radio" id="4">
+                      El Mar
+                 </label>
+            </div>
+
+            
+        </form>
+        <button type="button" id="button" onclick="respuesta(0)">Responder</button>
+        <div class="respuestaContainer">
+        	<p id="resultado"></p>
+          <a href="pregunta5.html" id="nextPregunta"></a>
+          <a href="pregunta4.html" id="newTry" class="newTry"></a>  
+        </div>
+          
+    </div>
+
+  	<div class="sidelbarContainer">
+  		<div class="pistaContainer">
+  			<div class="audioContainer">
+
+        <div class="audioItem">
+          <h3>Tip</h3>
+          <img class="imagenCancion" src="imgs/Img_SE_LikeGlue.jpg">
+          <div class="secAudioContainer">
+            <audio controls autoplay>
+              <source  src="multimedias/pregunta4_Mar.mp3"  type="audio/mp3">
+              <p>Tu navegador no implementa el elemento audio</p>
+            </audio>
+          </div>
+        </div><!--Fin del div audioItem-->
+
+  		</div>
+  	</div>
+    </div>
+
+
+</body>

@@ -2,9 +2,9 @@ select count(*) from country
 where name like "a%" and Population > 50000;
 
 
-///////////////////////////////////////////// el pais con menos tamaño y ciertos campos para tener mayor vision
+/////////////el pais con menos tamaño y ciertos campos para tener mayor vision
 
-sselect name, Population, SurfaceArea from country order by SurfaceArea asc limit 1;
+select name, Population, SurfaceArea from country order by SurfaceArea asc limit 1;
 
 ////////////////////////////////////////////////////////////////
 select name, HeadOfState from country where name="Costa Rica";

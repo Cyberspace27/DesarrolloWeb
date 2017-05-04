@@ -1,0 +1,32 @@
+			Queries de insert a las tablas
+
+Canton insert 
+
+insert into canton(nombre, Ciudad_idCiudad, Ciudad_Pais_idPais)
+
+values ("Matina", 7, 1);
+
+Distritos Inserts
+insert into distrito(nombre, Canton_idCanton, Canton_Ciudad_idCiudad, Canton_Ciudad_Pais_idPais)
+
+values ("Parrita", 6 , 6, 1);
+
+
+
+
+
+
+Insert de ventas
+insert into ventas(monto, Fecha_venta,  Vendedor_idVendedor, Comprador_idCustomers, Propiedad_idPropiedad, Propiedad_Distrito_idDistrito,
+ 
+Propiedad_Distrito_Canton_idCanton, Propiedad_Distrito_Canton_Ciudad_idCiudad, Propiedad_Distrito_Canton_Ciudad_Pais_idPais)
+
+values ("Wayne Farm", "Tamarindo" , 3000000 , 1000, "Wayne Kerr", 1, 1 , 5, 1);
+
+
+
+
+
+
+
+
